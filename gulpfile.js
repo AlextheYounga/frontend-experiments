@@ -11,15 +11,15 @@ const livereload = require('gulp-livereload');
 // 		.pipe(gulp.dest('public/fonts/'))
 // });
 
-gulp.task('styles', () => {
-	return gulp
-		.src('scss/app.scss')
-		.pipe(sass().on('error', sass.logError))
-		.pipe(autoprefixer())
-		.pipe(gulp.dest('public/css/'));
-});
+// gulp.task('styles', () => {
+// 	return gulp
+// 		.src('scss/app.scss')
+// 		.pipe(sass().on('error', sass.logError))
+// 		.pipe(autoprefixer())
+// 		.pipe(gulp.dest('public/css/'));
+// });
 
-gulp.task('pages', () => {
+gulp.task('styles', () => {
 	return gulp
 		.src('scss/pages/*.scss')
 		.pipe(sass().on('error', sass.logError))
@@ -29,7 +29,7 @@ gulp.task('pages', () => {
 
 gulp.task('watch', function () {
 	livereload.listen();
-	gulp.watch('scss/**/*.scss', ['icons', 'styles']);
+	gulp.watch('scss/**/*.scss', ['styles']);
 });
 
 gulp.task('clean', () => {
@@ -39,4 +39,4 @@ gulp.task('clean', () => {
 	]);
 });
 
-gulp.task('default', gulpSequence('clean', 'styles', 'pages'));
+gulp.task('default', gulpSequence('clean', 'styles'));
