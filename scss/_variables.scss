@@ -1,0 +1,50 @@
+$io-yellow: #ffcb5a;
+$macncheese: #f4b51a;
+$dark-yellow: #dc9e04;
+$selected-yellow: #8c6300;
+$io-blue: #5561d8;
+$gunmetal: #34393e;
+$dark-grey: #4a4a4a;
+$brown-grey: #747474;
+$border-color: #93959d;
+$text-faded: #7c7c7e;
+$text-color: #626668;
+$light-grey: #f1f1f1;
+$lightest-grey: #f1f0f0;
+$divider: #D0D1D1;
+$lavender: #323a8d;
+$nav-grey: #e1e1e1;
+$placeholder-text: #dddddd;
+$unselected-grey: #bababa;
+
+/*== FontAwesome Overrides ==*/
+$fa-font-path: '../fonts';
+
+/*== Bootstrap Overrides ==*/
+$nav-tabs-border-color: none;
+$nav-tabs-link-active-border-color: none;
+$nav-tabs-link-hover-border-color: none;
+
+$card-border-radius: 2px;
+$container-max-widths: (
+    sm: 540px,
+    md: 720px,
+    lg: 960px,
+    xl: 1170px
+);
+
+$grid-breakpoints: (
+    xs: 0,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px,
+    xxl: 1440px
+);
+
+$spacer: 1rem;
+$spacers: ();
+$spacers: map-merge((0: 0, 1: ($spacer * .25), 2: ($spacer * .5), 3: $spacer, 4: ($spacer * 1.5), 5: ($spacer * 3), 6: ($spacer * 4), 7: ($spacer * 5), 8: ($spacer * 6), 9: ($spacer * 8), 10: ($spacer * 12)), $spacers);
+
+$box-shadow: 2px 2px 8px 0 rgba(83, 85, 108, 0.25);
+$box-shadow-lg: 1px 6px 11px 0 rgba(39, 38, 38, 0.24);

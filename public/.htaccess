@@ -1,0 +1,1 @@
+RedirectMatch 301 ^/$ /views/index.html
