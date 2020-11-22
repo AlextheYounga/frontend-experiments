@@ -1,12 +1,14 @@
 var svg = SVG({
-  size: 100,
-  // millimeters
+  // size: 500, // millimeters
   background: "#fff",
   stroke: "#333",
   strokeWidth: 0.2,
-  cpuTime: 7 // milliseconds / frame
-
+  cpuTime: 7, // milliseconds / frame
+  viewBox: `55 90 90 90`, // Full width
+  // centerOrigin: true,
 });
+
+
 
 var size = 512; // 512 bytes is a common disk sector size, and exactly a half of kibibyte.
 var water = 4; // 0 for no water
@@ -81,7 +83,6 @@ function setup() {
 
 var draw = function draw(w) {
   var r = 200 / size;
-  var k = 0;
   pen = false;
 
   for (var z = 0; z <= size; z++) {
