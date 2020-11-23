@@ -1,11 +1,14 @@
+
+
+mobileViewBox = '80 60 75 80';
+desktopViewBox = '55 90 90 90';
 var svg = SVG({
   // size: 500, // millimeters
   background: "#fff",
   stroke: "#333",
   strokeWidth: 0.2,
-  cpuTime: 7, // milliseconds / frame
-  viewBox: `55 90 90 90`, // Full width
-  // centerOrigin: true,
+  cpuTime: 7, // milliseconds / frame  
+  viewBox: desktopViewBox,
 });
 
 
